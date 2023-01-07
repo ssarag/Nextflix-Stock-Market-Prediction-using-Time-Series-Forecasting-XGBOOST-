@@ -27,4 +27,36 @@ The libraries needed for the data import and EDA portions of the project are cer
 
 We can see that each feature presents only numerical values, we can therefore assume that a potential prediction task will need regression techniques and not classification. As the dataset’s index is in numbers, I used the DateTime column as my index, it’s going to be easier for the chart plotting. 
 
+# Exploratory Data Analysis
+
+We can now focus on data exploration and visualization.
+
+I started by plotting a correlation matrix using seaborn. The correlation matrix shows us the single correlation between each feature and the others on the dataset. In general, the correlation can be:
+
+<0.3 and therefore weak
+between 0.3 and 0.6 and therefore moderate
+between 0.6 and 0.9 and therefore strong
+>0.9 extremely strong
+>
+The sign, on the other hand, indicates whether the two factors grow in the same direction or in the opposite one. A correlation of -0.9 indicates that as one variable increases the other decreases. Depending on the uncertainty of the environment though, the ranges can change. In quantitative finance, a 0.3 or 0.4 correlation can be considered strong.
+
+![image](https://user-images.githubusercontent.com/103538049/211171476-85a136fa-01e0-45fa-b005-55517329f24b.png)
+
+Observations from the heatmap:
+
+Open, High, Close, Adj Close, Low, are strongly correlated to all each others. 
+
+Volume shows a weak correlation with others. 
+
+# Feature Creation
+
+In time series analysis and forecasting, “time” can be the only feature you have at your disposal so it’s better to extract as much information as possible from it. The following function creates columns out of the DateTime index.
+
+For example, at the time 1/1/2017 0:10 , the command df.index.hour will extract the value 0, since it’s midnight. df.index.dayofweek will show a 6 as January 1st, 2017 was a Sunday (numeration starts from 0), and so on.
+
+by running the function create_features on our df, we instantly create all the features defined in the function.
+
+![image](https://user-images.githubusercontent.com/103538049/211171627-b692666e-75dc-438a-9fe6-865b6fce81d5.png)
+
+
 
