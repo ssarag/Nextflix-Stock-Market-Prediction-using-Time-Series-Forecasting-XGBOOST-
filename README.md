@@ -60,3 +60,16 @@ By running the function create_features on our df, we instantly create all the f
 ![image](https://user-images.githubusercontent.com/103538049/211171717-1b31d75c-9ce8-4a6f-bfde-dae9b10b6843.png)
 
 
+
+![image](https://user-images.githubusercontent.com/103538049/211171815-b147ac32-91ee-4591-b7f0-11803c06bf91.png)
+
+
+
+![image](https://user-images.githubusercontent.com/103538049/211171819-1ffabdb9-4c41-4b71-b56c-53ab94dc7a3b.png)
+
+
+![image](https://user-images.githubusercontent.com/103538049/211171845-cbc1c304-07f4-44b5-ac65-cba2acf4de5d.png)
+
+
+
+
