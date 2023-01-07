@@ -50,13 +50,13 @@ Volume shows a weak correlation with others.
 
 # Feature Creation
 
-In time series analysis and forecasting, “time” can be the only feature you have at your disposal so it’s better to extract as much information as possible from it. The following function creates columns out of the DateTime index.
-
-For example, at the time 1/1/2017 0:10 , the command df.index.hour will extract the value 0, since it’s midnight. df.index.dayofweek will show a 6 as January 1st, 2017 was a Sunday (numeration starts from 0), and so on.
-
-by running the function create_features on our df, we instantly create all the features defined in the function.
+In time series analysis and forecasting, “time” can be the only feature you have at your disposal so it’s better to extract as much information as possible from it. The following function creates columns out of the DateTime index. For example, at the time 1/1/2017 0:10 , the command df.index.hour will extract the value 0, since it’s midnight. df.index.dayofweek will show a 6 as January 1st, 2017 was a Sunday (numeration starts from 0), and so on.
+By running the function create_features on our df, we instantly create all the features defined in the function.
 
 ![image](https://user-images.githubusercontent.com/103538049/211171627-b692666e-75dc-438a-9fe6-865b6fce81d5.png)
 
+# Box plots of the features to represent trends 
+
+![image](https://user-images.githubusercontent.com/103538049/211171717-1b31d75c-9ce8-4a6f-bfde-dae9b10b6843.png)
 
 
