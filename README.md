@@ -71,5 +71,35 @@ By running the function create_features on our df, we instantly create all the f
 ![image](https://user-images.githubusercontent.com/103538049/211171845-cbc1c304-07f4-44b5-ac65-cba2acf4de5d.png)
 
 
+# Train Test Split
+
+At this stage, the dataset can be split between training and testing. In a normal scenario, we would randomly select new records to train the algorithm and test it on the remaining ones. In this case, it’s important to preserve a time sequence between the training and testing records. Therefore 70 percent of data from 2018-02-01 to 2021-06-01 is in the traning dataset and the data from 2021-06-01 to 2022-02-01 is in the testing set. 
+
+![image](https://user-images.githubusercontent.com/103538049/211172437-2e31cd43-f7fa-4132-aa59-fbd4d3739452.png)
+
+
+# Predictions
+
+To predict records in our test set I have used Gradient Bossting (XGBOOST) algorithm. 
+
+Hyperparameters settings for the algorithm is as follows:
+
+
+n_estimators : the number of learning rounds the XGBoost algorithm will try to learn from the training data
+
+max_depth : the maximum depth a tree can have, a deeper tree is more likely to cause overfitting
+
+learning_rate : or shrinkage factor, as new trees are created to correct residual errors, the learning rate (<1.0) “slows down” the ability of the model to fit the data and consequently learn as the number of trees increases
+
+verbose : how often the model prints out on the console the result, we set 100 here as the n_estimators is quite high. The default value is 1
+
+
+# Output of the forecasting
+
+![image](https://user-images.githubusercontent.com/103538049/211172595-db641550-1650-48e3-832f-eafee9dc2578.png)
+
+
+
+
 
 
