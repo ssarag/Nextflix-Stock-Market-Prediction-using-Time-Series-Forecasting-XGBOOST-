@@ -1,1 +1,1 @@
-# Nextflix-Stock-Market-Prediction-using-Time-Series-Forecasting-XGBOOST-
+# Nextflix Stock Market Prediction using Time Series Forecasting XGBOOST
